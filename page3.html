@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamientos y Reflexiones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Por defecto inicia en modo oscuro -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="toggle-dark-mode" class="btn btn-secondary">Light Mode</button> <!-- Botón para cambiar el modo -->
+            <select id="page-select" class="form-control w-25" onchange="changePage()">
+                <option value="index.html">Introducción</option>
+                <option value="page1.html">Página 1</option>
+                <option value="page2.html">Página 2</option>
+                <option value="page3.html" selected>Página 3</option>
+                <option value="page4.html">Página 4</option>
+                <option value="page5.html">Página 5</option>
+            </select>
+        </div>
+
+        <div class="page-content">
+            <p>Luego de unos años, a mis 18 años, por primera vez coincidí con personas las cuales compartian gustos similares a los mios, pensamientos y el modo de vivir igual que el mio, conocí personas que en ese entonces comenzaban a generar felicidad en mi vida, luego de sentirme rechazado por el mundo, aparecieron personas las cuales me hicieron sentir parte de algo, me hicieron sentir querido, importante, por fin pude hablar mis cosas con personas a las cuales les "interesaban", se sentío realmente linda esa etapa de mi vida, pero en el fondo sabía que no era el lugar al cual pertenecía. En esos años seguía siendo alguien inmaduro, sin una identidad ni una personalidad forjada, definida, añadiendo los problemas de depresión que sufría. Veía el entorno al cual estaba perteneciendo, y a pesar de que era un ambiente grato para mi en ese entonces, amistades las cuales me brindaron experiencias y vivencias nuevas en mi vida, cosas que nunca había experimentado, las cuales me hacían sentirme mas "normal" que antes, en el fondo sabía que aún sintiendome bien con ellos, no era parte de aquello, tuve primeras experiencias con personas, con situaciones, las cuales me enseñaron mucho de la vida, como mi primera fiesta, primeras risas en grupo de amigos, actividades al aire libre, fuera de ese refugio que tenía en mi habitación, primeras borracheras, primeras experiencias con sustancias, y a pesar de que muchos puedan decir que no son experiencias buenas, para mi si lo fueron, porque me hicieron afirmar en mi vida que ese ambiente no era para mi, soy una persona que cree que debes experimentar de todo en tu vida, no hacerle el quite a ciertas cosas simplemente porque la sociedad dice que son malas, pienso que se debe experimentar para saber, para tener un testimonio y una opinión propia sobre las cosas y luego aprender de ello y aplicarlo como tu quieras a tu vida, de la mejor forma posible.</p>
+        </div>
+
+        <!-- Flechas para navegar -->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <button class="btn btn-dark" onclick="navigatePage(-1)" id="prev-button">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)" id="next-button">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

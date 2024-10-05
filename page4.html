@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamientos y Reflexiones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Por defecto inicia en modo oscuro -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="toggle-dark-mode" class="btn btn-secondary">Light Mode</button> <!-- Botón para cambiar el modo -->
+            <select id="page-select" class="form-control w-25" onchange="changePage()">
+                <option value="index.html">Introducción</option>
+                <option value="page1.html">Página 1</option>
+                <option value="page2.html">Página 2</option>
+                <option value="page3.html">Página 3</option>
+                <option value="page4.html" selected>Página 4</option>
+                <option value="page5.html">Página 5</option>
+            </select>
+        </div>
+
+        <div class="page-content">
+            <p>Hasta el día de hoy he pensado de que mis experiencias con la droga y el alcohol, como las malas juntas con cierto tipo de personas, como también a los lugares que fui en esos tiempos, fueron un escape a la realidad de mi vida, eran tan malos momentos los cuales estaba pasando en mi vida, que la oportunidad que se me presentó, lo utilicé para escapar, salí de ese refugio el cual tenía, simplemente para entrar en otro que era mucho peor, pero también pienso que era algo necesario, soy una persona que cree que cada cosa pasa por algo en la vida de uno, porque he reflexionado sobre mi vida, y si lo pienso fríamente, si no hubiese vivido nada de eso, a pesar de que no era un ambiente para mi, la persona en la que me he convertido y la manera de persar que tengo hoy en día no serían la misma, las experiencias en la vida te desarrollan como persona, y te empujan a ser alguien mejor, pero está en uno decidir si esas situaciones lo llevan por el mal camino o por camino correcto, afortunadamente, mi modo de ver la vida, y la forma en que he vivido mi vida, me hicieron siempre ir por el mejor camino, ese sentimiendo de no pertenecer a un lugar, me hizo comprender de que donde estaba viviendo en ese entonces, no era el lugar correcto para mi, no era el indicado, no era el camino que estaba diseñado para mi. Pienso de que la vida es el mayor mentor que tenemos, la vida siempre está ahí para enseñar, para corregir, pienso de que todos tenemos un camino especialmente creado para cada uno, un camino al cual nos lleva a la felicidad, a la paz y al amor, pienso de que ese camino es como una larga carretera, una carretera totalmente recta, en la cual podemos llegar facilmente a nuestra felicidad, pero la vida misma nos coloca curvas, diferentes caminos a los costados de nuestra carretera principal, caminos que nos llevan por diferentes situaciones dependiendo de nuestras decisiones, y creo que es ahí donde como personas mortales y simples nos desviamos de nuestra felicidad, pero también creo de que esos caminos puestros por la vida misma están puestos con el proposito de que tomemos esos caminos, ¿Para qué?, simplemente para que cometamos errores y aprendamos que es la vida, que es lo mejor para nosotros y nuestros seres queridos, el problema es que algunas personas se desvian de su carretera principal y nunca vuelven al rumbo de su vida, se pierden, en excesos, vicios, delitos, malas amistades, malas relaciones, se quedan con las malas decisiones de su vida y aceptan de que no habrá unc cambio, y es ahí cuando las personas se vuelven miserables e infelices, pero las personas tampoco se dan cuenta de que nuestro mayor mentor, la vida misma, es la que también nos ayuda a volver a nuestro camino de felicidad, pero la gente está tan ciega últimamente por diferentes cosas como redes sociales, dinero, estatus socioeconómico, ropa de marca, lugares caros que visitar, viven tanto de las apariencias, se dejan arrastrar por los malos hábitos de la sociedad, que no se dan cuenta como la vida misma es la que los ayuda a volver a ese camino de felicidad, la vida es la que se encarga de decirte a ti, "Oye, por ahí no", pero sigues tomando las mismas decisiones en tu vida, luego la vida por segunda vez te ayuda, "Oye, eso está mal, es por aquí", pero nuevamente la gente no escucha, pero la vida es sabia, y siempre te hará aprender de una manera u otra, y es ahí cuando la vida llega al punto de golpearte, de tirarte al piso y darte una buena paliza para que por fin puedas aprender e ir por el camino correcto, pero las personas no lo hacen.</p>
+        </div>
+
+        <!-- Flechas para navegar -->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <button class="btn btn-dark" onclick="navigatePage(-1)" id="prev-button">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)" id="next-button">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

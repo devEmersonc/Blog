@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamientos y Reflexiones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Por defecto inicia en modo oscuro -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="toggle-dark-mode" class="btn btn-secondary">Light Mode</button> <!-- Botón para cambiar el modo -->
+            <select id="page-select" class="form-control w-25" onchange="changePage()">
+                <option value="index.html">Introducción</option>
+                <option value="page1.html" selected>Página 1</option>
+                <option value="page2.html">Página 2</option>
+                <option value="page3.html">Página 3</option>
+                <option value="page4.html">Página 4</option>
+                <option value="page5.html">Página 5</option>
+            </select>
+        </div>
+
+        <div class="page-content">
+            <p>Aproximadamente en el año 2013-2014, descubrí por primera vez una película llamada "Once", interpretada por Glen Hansard y Markéta Irglová, Glen Hansard es un músico real fuera de esa película, su estilo de música es el Folk, sus canciones son muy relajantes, melancólicas y muchas de ellas tristes y de desamor. Desde que ví esa película, Glen Hansard se volvió uno de mis músicos preferidos, sus letras, su interpretación, su voz, su música, como su sencilles ante la vida era algo que me hacía sentir identificado con él en muchos aspectos. En aquellos tiempos, yo pasaba por malos momentos en mi vida, en esa época aún era adolescente y no lo estaba pasando muy bien, sufrí bullying en los colegios a los cuales asistí, sentí en carne propia lo que es ese sentimiento de rechazo que tiene el ser humano ante otros, discriminación, rechazo, malos tratos, malas palabras que se refieren a tu cuerpo como a tu personalidad. La música de Glen Hansard en esos tiempos me ayudó en esos momentos a sentir refugio en algún lado, y que lugar mas bonito que la música. Descubrí a Ed Sheeran unos años antes que a Glen, y también fue ese refugio al cual podía acudir en esos malos años que pasé en mi vida, y gracias a esos 2 músicos me decidí a comprar mi primera guitarra con mis propios ahorros, recuerdo perfectamente a mi tía que me acompañó a comprar esa guitarra a un local del centro de mi ciudad, era una guitarra clásica con cuerdas de nylon, era una guitarra hermosa. Comencé a aprender a tocar guitarra, de apoco ese refugio al cual acudía en mis malos momentos, que era la música de otros músicos, se fue convirtiendo en un refugio que estaba en mis propios dedos y que yo mismo podía crear.</p>
+        </div>
+
+        <!-- Flechas para navegar -->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <button class="btn btn-dark" onclick="navigatePage(-1)" id="prev-button">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)" id="next-button">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
