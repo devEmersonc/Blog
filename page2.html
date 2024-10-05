@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamientos y Reflexiones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Por defecto inicia en modo oscuro -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="toggle-dark-mode" class="btn btn-secondary">Light Mode</button> <!-- Botón para cambiar el modo -->
+            <select id="page-select" class="form-control w-25" onchange="changePage()">
+                <option value="index.html">Página 1</option>
+                <option value="page2.html" selected>Página 2</option>
+                <option value="page3.html">Página 3</option>
+            </select>
+        </div>
+
+        <h1 class="text-center">Pensamientos y Reflexiones</h1>
+
+        <div class="page-content">
+            <p>Aquí va el contenido de la segunda página. Puedes navegar entre las páginas utilizando el select o las flechas a los lados.</p>
+        </div>
+
+        <!-- Flechas para navegar -->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <button class="btn btn-dark" onclick="navigatePage(-1)">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>

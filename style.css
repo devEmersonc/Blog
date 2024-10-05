@@ -1,0 +1,63 @@
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode select {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .page-content {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Modo Claro */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.light-mode .btn {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+body.light-mode select {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+body.light-mode .page-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos adicionales */
+.container {
+    max-width: 800px;
+}
+
+.page-content {
+    text-align: justify;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajuste del botón de modo claro/oscuro */
+#toggle-dark-mode {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-dark {
+    transition: background-color 0.3s, color 0.3s;
+}
