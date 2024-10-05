@@ -8,7 +8,7 @@ toggleDarkMode.addEventListener('click', () => {
 
 // Navegar entre páginas con las flechas
 function navigatePage(direction) {
-    const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html']; // Lista de páginas
+    const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html', 'page6.html', 'page7.html', 'page8.html', 'page9.html']; // Lista de páginas
     const currentPage = window.location.pathname.split("/").pop(); // Obtener la página actual
     const currentIndex = pages.indexOf(currentPage); // Buscar índice de la página actual
     let newIndex = currentIndex + direction; // Determinar nueva página
@@ -38,7 +38,7 @@ window.onload = () => {
 
 // Actualiza el estado de los botones de navegación
 function updateButtonStates() {
-    const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html']; // Lista de páginas
+    const pages = ['index.html', 'page1.html', 'page2.html', 'page3.html', 'page4.html', 'page5.html', 'page6.html', 'page7.html', 'page8.html', 'page9.html']; // Lista de páginas
     const currentPage = window.location.pathname.split("/").pop(); // Obtener la página actual
     const currentIndex = pages.indexOf(currentPage); // Buscar índice de la página actual
 
