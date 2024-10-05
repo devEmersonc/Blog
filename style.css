@@ -31,6 +31,11 @@ body.light-mode .btn {
     color: #212529;
 }
 
+.titulo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 body.light-mode select {
     background-color: #ffffff;
     color: #212529;

@@ -15,11 +15,10 @@
             <select id="page-select" class="form-control w-25" onchange="changePage()">
                 <option value="index.html" selected>Página 1</option>
                 <option value="page2.html">Página 2</option>
-                <option value="page3.html">Página 3</option>
             </select>
         </div>
 
-        <h1 class="text-center">Pensamientos y Reflexiones</h1>
+        <h1 class="text-center titulo">Pensamientos y Reflexiones</h1>
 
         <div class="page-content">
             <p>Aquí va el contenido de la primera página. Puedes navegar entre las páginas utilizando el select o las flechas a los lados.</p>
@@ -27,8 +26,8 @@
 
         <!-- Flechas para navegar -->
         <div class="d-flex justify-content-between align-items-center mt-5">
-            <button class="btn btn-dark" onclick="navigatePage(-1)">&#9664;</button>
-            <button class="btn btn-dark" onclick="navigatePage(1)">&#9654;</button>
+            <button class="btn btn-dark" onclick="navigatePage(-1)" id="prev-button">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)" id="next-button">&#9654;</button>
         </div>
     </div>
 
