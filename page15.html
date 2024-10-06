@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensamientos y Reflexiones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode"> <!-- Por defecto inicia en modo oscuro -->
+    <div class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="toggle-dark-mode" class="btn btn-secondary">Light Mode</button> <!-- Botón para cambiar el modo -->
+            <select id="page-select" class="form-control w-25" onchange="changePage()">
+                <option value="index.html">Introducción</option>
+                <option value="page1.html">Página 1</option>
+                <option value="page2.html">Página 2</option>
+                <option value="page3.html">Página 3</option>
+                <option value="page4.html">Página 4</option>
+                <option value="page5.html">Página 5</option>
+                <option value="page6.html">Página 6</option>
+                <option value="page7.html">Página 7</option>
+                <option value="page8.html">Página 8</option>
+                <option value="page9.html">Página 9</option>
+                <option value="page10.html">Página 10</option>
+                <option value="page11.html">Página 11</option>
+                <option value="page12.html">Página 12</option>
+                <option value="page13.html">Página 13</option>
+                <option value="page14.html">Página 14</option>
+                <option value="page15.html" selected>Página 15</option>
+            </select>
+        </div>
+            
+        <div class="page-content">        
+            <p>Este último tiempo he observado la vida de personas que he conocido y simplemente veo a personas que han cumplido sus sueños, sus metas y son personas de bien, con vidas felices y plenas, otras aún siguen trabajando para poder lograr sus metas, pero les va bien en lo que hacen, no suelo sentir envidia, envidia es algo que nunca ha sido parte de mi, me alegro  por lo logros de los demás y me pone feliz saber que a los demás la vida les sonríe, y lo digo muy en serio, pero no puedo evitar sentir pena y vergüenza de mi mismo al ver como todos logran sus cosas y yo aún no logro hacer nada. Se perfectamente que es malo compararse con otros y evito caer en eso, y no es que me compare, simplemente es sentirme inútil al no poder lograr las cosas que me gustaría lograr. Hay veces en que siento que soy realmente tonto, literalmente la definición de tonto, "Falta o escasa de entendimiento o de razón", hay veces en que siento que realmente no soy una persona inteligente y que vivo con metas que son simplemente imposibles para mi. Mi cabeza da muchas vueltas durante el día, y la verdad no se si será normal. No soy único, soy una persona promedio o quizás bajo el promedio, pero claramente no soy un genio ni alguien que sobresalga, pero mi manera de pensar es muy tonta y absurda al punto de no comprender temas en los que estudio. Por eso es que siento que soy un bueno para nada pero la mayoria de veces trato de no mostrar esa cara de mi para que otros no lo vean porque es algo que realmente me avergüenza. En muchas oportunidades trato de aparentar de que todo va bien y que voy avanzando en mis cosas cuando en realidad me siento completamento triste y frustrado pero no lo digo simplemente para no parecer débil frente a los demás.</p>
+            <p>Me gustaría poder lograr ser alguien mejor para mis padres, para mi mujer y para mi hija, lucho cada día más para poder hacerlo, pero sinceramente este último tiempo no he podido ser muy firme con todo, siento que cada día me agota la presión que tengo de mi mismo y de los de mi alrededor.</p>
+            <p>Muchas veces también pienso en como soy una verdadera molestia para las personas que me rodean, en mi relación de pareja siempre doy problemas y le causo otros problemas a mi pareja por cosas sin sentido como otras que si lo tienen, en la mayor parte de mi vida siempre les he dado problemas a mis padres de una manera u otra, y a pesar de que siguen conmigo siempre termino dando problemas. Me da pena a veces escuchar a mi padre hablar de hijos de otras personas que han logrado cosas con su vida y su hijo no ha logrado nada. Muchas veces en pensado que responderán mi padres cuando le preguntan que hace su hijo o a que se dedica y ellos no pueden responder nada ya que eso es lo que hago.</p>
+            <p>Últimamente me he sentido bastante solo y triste, en las noches solía dormir muy tarde y al momento de acostarme a dormir solían venir pensamientos intrusivos los cuales me hacían sentir mucho mas triste de lo que estaba, solo miraba por la ventana y me decía a mi mismo que no era suficiente, desde que me di cuenta que me estaba afectando mucho tipo de pensamiento, comencé a dormir mucho mas temprano para calmar los pensamientos que tengo en mi mente.</p>
+            <p>A pesar de que me he sentido así durante ya un tiempo, y me sigo sintiendo de la misma manera, sigo tratrando de sobrellevar la situación y poder superarlo. Solo espero poder logarlo.</p>
+        </div>
+
+        <!-- Flechas para navegar -->
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <button class="btn btn-dark" onclick="navigatePage(-1)" id="prev-button">&#9664;</button>
+            <button class="btn btn-dark" onclick="navigatePage(1)" id="next-button">&#9654;</button>
+        </div>
+    </div>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
